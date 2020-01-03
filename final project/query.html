@@ -1,0 +1,15 @@
+{% extends "base/base.html" %}
+
+{% block title %} {{ mytitle }} {% endblock %}
+
+{% block content %} 
+
+<form method="GET" action="{{ url_for('movies') }}">
+    <label for="name">Choose your miRNA: </label><input type="text" name="movie" id="movie">
+    <input type="submit">
+</form>
+
+
+    
+
+{% endblock %}
