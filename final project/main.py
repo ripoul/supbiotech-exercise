@@ -10,22 +10,18 @@ app = Flask(__name__)
 @app.route('/home')
 def home():
     title = 'Home'
-    content = 'Welcome to our website'
-    return render_template('Finalproject.html', mytitle=title, mycontent=content)
+    return render_template('home.html', mytitle=title)
     
 
 @app.route('/query')
 def query():
     title = 'Query'
-    content = 'barre recherche mirna'
-    return render_template('Finalproject.html',mytitle=title, mycontent=content)
+    return render_template('query.html',mytitle=title)
     
 
 @app.route('/about')
 def about():
-    title = 'About'
-    content = 'description projet'
-    return render_template('Finalproject.html', mytittle=title, mycontent=content)
+    return render_template('about.html')
 
 
 if __name__ == "__main__":
